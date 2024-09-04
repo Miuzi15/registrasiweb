@@ -1,0 +1,18 @@
+## Form Registrasi dengan PHP dan MySQL
+Proyek ini adalah contoh sederhana dari aplikasi web yang memungkinkan pengguna untuk mengisi formulir pendaftaran. Data yang diisi oleh pengguna akan disimpan ke dalam database MySQL. Proyek ini menggunakan PHP untuk menangani logika backend dan menghubungkan ke database.
+
+## Fitur
+Formulir pendaftaran dengan validasi input dasar.
+Penyimpanan data ke dalam database MySQL.
+Penggunaan prepared statements untuk mencegah SQL injection.
+Tampilan form yang responsif dan user-friendly menggunakan CSS.
+
+## Penggunaan
+Pengisian Form: Pengguna dapat mengisi form dengan data yang sesuai dan menekan tombol Submit.
+Penyimpanan Data: Setelah submit, data akan disimpan ke dalam tabel registrasi di database MySQL.
+Validasi: Jika ada kesalahan dalam pengisian form, pesan error akan ditampilkan kepada pengguna.
+
+## Catatan
+Keamanan: Formulir ini telah disesuaikan untuk mencegah SQL injection menggunakan prepared statements dan sanitasi input.
+Pengembangan Lebih Lanjut: Anda bisa memperluas fitur proyek ini dengan menambahkan validasi sisi server yang lebih kuat, fitur pengunggahan file, atau integrasi dengan API pihak ketiga.
+
