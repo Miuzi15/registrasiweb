@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Form Register</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                padding: 20px;
+            }
+
+            form {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                max-width: 400px;
+                margin: auto;
+            }
+
+            label {
+                display: block;
+                margin-bottom: 8px;
+                font-weight: bold;
+            }
+
+            input[type="text"],
+            input[type="email"],
+            textarea,
+            select {
+                width: 100%;
+                padding: 8px;
+                margin-bottom: 16px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+
+            input[type="radio"] {
+                margin-right: 8px;
+            }
+
+            button {
+                background-color: #4CAF50;
+                color: white;
+                padding: 10px 15px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                font-size: 16px;
+            }
+
+            button:hover {
+                background-color: #45a049;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="proses.php" method="post">
+            <label for="nama">Nama</label>
+            <input type="text" name="nama" autocomplete="off"> <br>
+            <label for="umur">Umur</label>
+            <input type="text" name="umur" autocomplete="off"> <br>
+            <label for="email">Email</label>
+            <input type="email" name="email" autocomplete="off"> <br>
+            <label for="jeniskelamin">Jenis Kelamin</label><br>
+            <input type="radio" name="jeniskelamin" value="Pria">Pria
+            <input type="radio" name="jeniskelamin" value="Wanita">Wanita<br>
+            <label for="agama">Agama</label>
+            <select name="agama">
+                <option value="Islam">Islam</option>
+                <option value="Kristen">Kristen</option>
+                <option value="Katolik">Katolik</option>
+                <option value="Hindu">Hindu</option>
+                <option value="Budha">Budha</option>
+                <option value="Konghucu">Konghucu</option>
+            </select> <br>
+            <label for="komentar">Komentar</label> <br>
+            <textarea name="komentar" rows="8" cols="80"></textarea> <br>
+            <button type="submit" name="submit" value="<?php echo date('h:i:sa'); ?>">Submit</button>    
+        </form>
+    </body>
+</html>
+
